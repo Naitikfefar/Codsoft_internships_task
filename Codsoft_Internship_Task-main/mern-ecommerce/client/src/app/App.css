@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;700&display=swap');
+
+:root {
+    --bg: #07101f;
+    --bg-elevated: #0d1729;
+    --surface: rgba(13, 23, 41, 0.78);
+    --surface-strong: #111c33;
+    --text: #f8fafc;
+    --muted: #c7d2fe;
+    --border: rgba(255, 255, 255, 0.12);
+    --accent: #f97316;
+    --accent-soft: rgba(249, 115, 22, 0.18);
+    --shadow: 0 24px 60px rgba(2, 6, 23, 0.45);
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    color: var(--text);
+    background:
+        radial-gradient(circle at top left, rgba(249, 115, 22, 0.16), transparent 34%),
+        radial-gradient(circle at top right, rgba(56, 189, 248, 0.12), transparent 28%),
+        linear-gradient(180deg, #0a1120 0%, #07101f 52%, #050b16 100%);
+}
+
+#root {
+    min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.navbrand,
+.landing__header__main,
+.featured__items__header__big {
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.2s ease, opacity 0.2s ease;
+}
+
+a:visited,
+a:hover,
+a:active,
+a:focus {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.nav__bottom__container a,
+.navbrand a,
+.featured__header__small,
+.footer__container a,
+.login__other__actions a,
+.register__other__actions a,
+.account__details__container a,
+.related__product__card__inner,
+.related__product__card:hover,
+.wishcard a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.footer__container a,
+.login__other__actions a,
+.register__other__actions a,
+.account__details__container a {
+    color: rgba(248, 250, 252, 0.78);
+}
+
+.footer__container a:hover,
+.login__other__actions a:hover,
+.register__other__actions a:hover,
+.account__details__container a:hover,
+.featured__header__small:hover {
+    color: var(--accent);
+}
+
+.footer__container a:visited,
+.login__other__actions a:visited,
+.register__other__actions a:visited,
+.account__details__container a:visited,
+.nav__bottom__container a:visited,
+.navbrand a:visited,
+.featured__header__small:visited {
+    color: inherit;
+}

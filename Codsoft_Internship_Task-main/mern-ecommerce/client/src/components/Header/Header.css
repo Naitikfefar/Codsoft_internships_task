@@ -1,0 +1,11 @@
+.header__container {
+    height: auto;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1200;
+    background: rgba(7, 16, 31, 0.82);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--border);
+    box-shadow: var(--shadow);
+}
